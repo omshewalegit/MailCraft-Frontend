@@ -623,32 +623,32 @@ export default function EmailWriter() {
     setCharCount(email.length);
   }, [email]);
 
-  const generate = async () => {
-    if (!email.trim()) return;
-    setLoading(true);
-    setError("");
-    setReply("");
-    setEditing(false);
-    try {
-      const res = await fetch(
-        `${import.meta.env.VITE_API_URL || "http://localhost:8080"}/api/email/generate`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ emailContent: email, tone }),
-        },
-      );
-      if (!res.ok) throw new Error(`Server error ${res.status}`);
-      const r = await res.text();
-      setReply(r);
-      setEditedReply(r);
-    } catch (e) {
-      setError(e.message || "Could not connect. Is the backend running?");
-    } finally {
-      setLoading(false);
-    }
-  };
-
+ // LINE 273-293 — REPLACE KARO
+const generate = async () => {
+  if (!email.trim()) return;
+  setLoading(true);
+  setError("");
+  setReply("");
+  setEditing(false);
+  try {
+    const res = await fetch(
+      `${import.meta.env.VITE_API_URL || "http://localhost:8080"}/api/email/generate`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ emailContent: email, tone }),
+      },
+    );
+    if (!res.ok) throw new Error(`Server error ${res.status}`);
+    const r = await res.text();
+    setReply(r);
+    setEditedReply(r);
+  } catch (e) {
+    setError(e.message || "Could not connect. Is the backend running?");
+  } finally {
+    setLoading(false);
+  }
+};
   const copy = () => {
     navigator.clipboard.writeText(editedReply);
     setCopied(true);
