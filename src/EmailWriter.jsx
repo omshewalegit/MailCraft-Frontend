@@ -639,12 +639,27 @@ const generate = async () => {
         body: JSON.stringify({ emailContent: email, tone }),
       },
     );
-    if (!res.ok) throw new Error(`Server error ${res.status}`);
+    if (!res.ok) {
+      if (res.status === 429) {
+        setError("Request limit reached. Please wait a moment and try again.");
+      } else if (res.status === 401 || res.status === 403) {
+        setError("Access denied. Please refresh the page and try again.");
+      } else if (res.status >= 500) {
+        setError("Our servers are experiencing issues. Please try again shortly.");
+      } else {
+        setError("Unable to generate a reply. Please try again.");
+      }
+      return;
+    }
     const r = await res.text();
     setReply(r);
     setEditedReply(r);
   } catch (e) {
-    setError(e.message || "Could not connect. Is the backend running?");
+    if (!navigator.onLine) {
+      setError("No internet connection. Please check your network and try again.");
+    } else {
+      setError("Unable to connect to the server. Please try again shortly.");
+    }
   } finally {
     setLoading(false);
   }
