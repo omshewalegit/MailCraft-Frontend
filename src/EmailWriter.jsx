@@ -1,11 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 const TONES = [
-  {
-    value: "professional",
-    label: "Professional",
-    desc: "Polished & structured",
-  },
+  { value: "professional", label: "Professional", desc: "Polished & structured" },
   { value: "formal", label: "Formal", desc: "Executive-level" },
   { value: "friendly", label: "Friendly", desc: "Warm & approachable" },
   { value: "apologetic", label: "Apologetic", desc: "Empathetic & sincere" },
@@ -159,78 +155,33 @@ const GlowOrb = ({ style }) => (
 );
 
 const SpinnerIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2.5"
-    strokeLinecap="round"
-    style={{ animation: "spin 0.8s linear infinite" }}
-  >
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" style={{ animation: "spin 0.8s linear infinite" }}>
     <path d="M21 12a9 9 0 1 1-6.219-8.56" />
   </svg>
 );
 
 const SendIcon = () => (
-  <svg
-    width="15"
-    height="15"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2.2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M22 2L11 13" />
     <polygon points="22 2 15 22 11 13 2 9 22 2" />
   </svg>
 );
 
 const CopyIcon = () => (
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <rect x="9" y="9" width="13" height="13" rx="2" />
     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
   </svg>
 );
 
 const CheckIcon = () => (
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="20 6 9 17 4 12" />
   </svg>
 );
 
 const RefreshIcon = () => (
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
     <path d="M21 3v5h-5" />
     <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
@@ -251,199 +202,47 @@ const LogoMark = () => (
       </linearGradient>
     </defs>
     <rect width="32" height="32" rx="9" fill="url(#lg)" />
-    <rect
-      x="5"
-      y="10"
-      width="18"
-      height="13"
-      rx="2"
-      fill="none"
-      stroke="white"
-      strokeWidth="1.5"
-      strokeOpacity="0.9"
-    />
-    <path
-      d="M5 12.5l9 6 9-6"
-      stroke="white"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeOpacity="0.9"
-    />
-    <rect
-      x="20"
-      y="6"
-      width="6"
-      height="2.5"
-      rx="1.2"
-      fill="url(#lg2)"
-      transform="rotate(-45 20 6)"
-    />
-    <path
-      d="M17.8 14.2l3.5-3.5"
-      stroke="#c7d2fe"
-      strokeWidth="1.3"
-      strokeLinecap="round"
-      strokeOpacity="0.8"
-    />
-    <circle
-      cx="25"
-      cy="7"
-      r="2.5"
-      fill="#c7d2fe"
-      fillOpacity="0.25"
-      stroke="#a78bfa"
-      strokeWidth="1"
-    />
-    <path
-      d="M24 7l.8.8 1.5-1.5"
-      stroke="#a78bfa"
-      strokeWidth="1.2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <rect x="5" y="10" width="18" height="13" rx="2" fill="none" stroke="white" strokeWidth="1.5" strokeOpacity="0.9" />
+    <path d="M5 12.5l9 6 9-6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.9" />
+    <rect x="20" y="6" width="6" height="2.5" rx="1.2" fill="url(#lg2)" transform="rotate(-45 20 6)" />
+    <path d="M17.8 14.2l3.5-3.5" stroke="#c7d2fe" strokeWidth="1.3" strokeLinecap="round" strokeOpacity="0.8" />
+    <circle cx="25" cy="7" r="2.5" fill="#c7d2fe" fillOpacity="0.25" stroke="#a78bfa" strokeWidth="1" />
+    <path d="M24 7l.8.8 1.5-1.5" stroke="#a78bfa" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const FEATURES = [
   {
-    color: "#f59e0b",
-    bg: "rgba(245,158,11,0.08)",
-    border: "rgba(245,158,11,0.15)",
+    color: "#f59e0b", bg: "rgba(245,158,11,0.08)", border: "rgba(245,158,11,0.15)",
     title: "Sub-3s Generation",
     desc: "Lightning-fast replies powered by advanced language models, ready before your coffee cools.",
   },
   {
-    color: "#a78bfa",
-    bg: "rgba(167,139,250,0.08)",
-    border: "rgba(167,139,250,0.15)",
+    color: "#a78bfa", bg: "rgba(167,139,250,0.08)", border: "rgba(167,139,250,0.15)",
     title: "8 Distinct Tones",
     desc: "From boardroom formal to warm & friendly — nail every context with precision tone control.",
   },
   {
-    color: "#34d399",
-    bg: "rgba(52,211,153,0.08)",
-    border: "rgba(52,211,153,0.15)",
+    color: "#34d399", bg: "rgba(52,211,153,0.08)", border: "rgba(52,211,153,0.15)",
     title: "Zero Data Retention",
     desc: "Your emails never touch a database. All processing is ephemeral and real-time.",
   },
   {
-    color: "#38bdf8",
-    bg: "rgba(56,189,248,0.08)",
-    border: "rgba(56,189,248,0.15)",
+    color: "#38bdf8", bg: "rgba(56,189,248,0.08)", border: "rgba(56,189,248,0.15)",
     title: "80% Time Saved",
     desc: "Reclaim hours each week. Let AI handle the drafting while you handle the strategy.",
   },
 ];
 
 const SAMPLE_ICONS = [
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <rect x="3" y="4" width="18" height="18" rx="2" />
-    <path d="M16 2v4M8 2v4M3 10h18" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="12 6 12 12 16 14" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-    <line x1="12" y1="9" x2="12" y2="13" />
-    <line x1="12" y1="17" x2="12.01" y2="17" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <rect x="2" y="7" width="20" height="14" rx="2" />
-    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <line x1="12" y1="1" x2="12" y2="23" />
-    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="16 12 12 8 8 12" />
-    <line x1="12" y1="16" x2="12" y2="8" />
-  </svg>,
-  <svg
-    width="13"
-    height="13"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-  </svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" /><line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="16 12 12 8 8 12" /><line x1="12" y1="16" x2="12" y2="8" /></svg>,
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>,
 ];
 
 const SampleMailsSection = ({ onSelect, workspaceRef }) => {
@@ -453,68 +252,31 @@ const SampleMailsSection = ({ onSelect, workspaceRef }) => {
     onSelect(content);
     setActiveIdx(idx);
     setTimeout(() => {
-      workspaceRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      workspaceRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 100);
   };
 
   return (
     <div style={{ marginBottom: "2rem" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "12px",
-          marginBottom: "1rem",
-        }}
-      >
-        <div
-          style={{
-            height: "1px",
-            width: "28px",
-            background: "rgba(99,102,241,0.3)",
-          }}
-        />
-        <span
-          style={{
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "10px",
-            letterSpacing: "0.16em",
-            textTransform: "uppercase",
-            color: "#3d4f6e",
-          }}
-        >
+      <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
+        <div style={{ height: "1px", width: "28px", background: "rgba(99,102,241,0.3)" }} />
+        <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "10px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#3d4f6e" }}>
           Sample Emails
         </span>
-        <div
-          style={{ height: "1px", flex: 1, background: "rgba(99,102,241,0.1)" }}
-        />
+        <div style={{ height: "1px", flex: 1, background: "rgba(99,102,241,0.1)" }} />
       </div>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          gap: "8px",
-        }}
-      >
+      <div className="sample-grid">
         {SAMPLE_EMAILS.map((s, i) => (
           <button
             key={s.label}
             onClick={() => handleSelect(s.content, i)}
+            className="sample-btn"
             style={{
               padding: "11px 13px",
               borderRadius: "10px",
-              border:
-                activeIdx === i
-                  ? "1px solid rgba(99,102,241,0.45)"
-                  : "1px solid rgba(255,255,255,0.07)",
-              background:
-                activeIdx === i
-                  ? "rgba(99,102,241,0.1)"
-                  : "rgba(255,255,255,0.025)",
+              border: activeIdx === i ? "1px solid rgba(99,102,241,0.45)" : "1px solid rgba(255,255,255,0.07)",
+              background: activeIdx === i ? "rgba(99,102,241,0.1)" : "rgba(255,255,255,0.025)",
               cursor: "pointer",
               transition: "all 0.15s",
               display: "flex",
@@ -537,64 +299,31 @@ const SampleMailsSection = ({ onSelect, workspaceRef }) => {
               }
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "7px",
-                width: "100%",
-              }}
-            >
-              <span
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "22px",
-                  height: "22px",
-                  borderRadius: "6px",
-                  flexShrink: 0,
-                  background:
-                    activeIdx === i
-                      ? "rgba(99,102,241,0.2)"
-                      : "rgba(255,255,255,0.05)",
-                  border:
-                    activeIdx === i
-                      ? "1px solid rgba(99,102,241,0.3)"
-                      : "1px solid rgba(255,255,255,0.08)",
-                  color: activeIdx === i ? "#a5b4fc" : "#6366f1",
-                  transition: "all 0.15s",
-                }}
-              >
+            <div style={{ display: "flex", alignItems: "center", gap: "7px", width: "100%" }}>
+              <span style={{
+                display: "flex", alignItems: "center", justifyContent: "center",
+                width: "22px", height: "22px", borderRadius: "6px", flexShrink: 0,
+                background: activeIdx === i ? "rgba(99,102,241,0.2)" : "rgba(255,255,255,0.05)",
+                border: activeIdx === i ? "1px solid rgba(99,102,241,0.3)" : "1px solid rgba(255,255,255,0.08)",
+                color: activeIdx === i ? "#a5b4fc" : "#6366f1",
+                transition: "all 0.15s",
+              }}>
                 {SAMPLE_ICONS[i]}
               </span>
-              <span
-                style={{
-                  fontSize: "11.5px",
-                  fontWeight: "500",
-                  fontFamily: "'DM Sans', sans-serif",
-                  color: activeIdx === i ? "#c7d2fe" : "#8896b3",
-                  letterSpacing: "0.01em",
-                  lineHeight: 1.3,
-                }}
-              >
+              <span style={{
+                fontSize: "11.5px", fontWeight: "500", fontFamily: "'DM Sans', sans-serif",
+                color: activeIdx === i ? "#c7d2fe" : "#8896b3",
+                letterSpacing: "0.01em", lineHeight: 1.3,
+              }}>
                 {s.label}
               </span>
             </div>
-            <p
-              style={{
-                fontSize: "11px",
-                fontFamily: "'DM Sans', sans-serif",
-                color: "#3d4f6e",
-                margin: 0,
-                lineHeight: 1.5,
-                paddingLeft: "29px",
-                overflow: "hidden",
-                display: "-webkit-box",
-                WebkitLineClamp: 2,
-                WebkitBoxOrient: "vertical",
-              }}
-            >
+            <p style={{
+              fontSize: "11px", fontFamily: "'DM Sans', sans-serif", color: "#3d4f6e",
+              margin: 0, lineHeight: 1.5, paddingLeft: "29px",
+              overflow: "hidden", display: "-webkit-box",
+              WebkitLineClamp: 2, WebkitBoxOrient: "vertical",
+            }}>
               {s.preview}
             </p>
           </button>
@@ -623,47 +352,32 @@ export default function EmailWriter() {
     setCharCount(email.length);
   }, [email]);
 
- // LINE 273-293 — REPLACE KARO
-const generate = async () => {
-  if (!email.trim()) return;
-  setLoading(true);
-  setError("");
-  setReply("");
-  setEditing(false);
-  try {
-    const res = await fetch(
-      `${import.meta.env.VITE_API_URL || "http://localhost:8080"}/api/email/generate`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ emailContent: email, tone }),
-      },
-    );
-    if (!res.ok) {
-      if (res.status === 429) {
-        setError("Request limit reached. Please wait a moment and try again.");
-      } else if (res.status === 401 || res.status === 403) {
-        setError("Access denied. Please refresh the page and try again.");
-      } else if (res.status >= 500) {
-        setError("Our servers are experiencing issues. Please try again shortly.");
-      } else {
-        setError("Unable to generate a reply. Please try again.");
-      }
-      return;
+  const generate = async () => {
+    if (!email.trim()) return;
+    setLoading(true);
+    setError("");
+    setReply("");
+    setEditing(false);
+    try {
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL || "http://localhost:8080"}/api/email/generate`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ emailContent: email, tone }),
+        }
+      );
+      if (!res.ok) throw new Error(`Server error ${res.status}`);
+      const r = await res.text();
+      setReply(r);
+      setEditedReply(r);
+    } catch (e) {
+      setError(e.message || "Could not connect. Is the backend running?");
+    } finally {
+      setLoading(false);
     }
-    const r = await res.text();
-    setReply(r);
-    setEditedReply(r);
-  } catch (e) {
-    if (!navigator.onLine) {
-      setError("No internet connection. Please check your network and try again.");
-    } else {
-      setError("Unable to connect to the server. Please try again shortly.");
-    }
-  } finally {
-    setLoading(false);
-  }
-};
+  };
+
   const copy = () => {
     navigator.clipboard.writeText(editedReply);
     setCopied(true);
@@ -671,10 +385,7 @@ const generate = async () => {
   };
 
   const scrollToWorkspace = () =>
-    workspaceRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    workspaceRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
 
   const pct = (charCount / MAX) * 100;
   const circleR = 9;
@@ -705,6 +416,8 @@ const generate = async () => {
         @keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
         @keyframes blink{0%,80%,100%{opacity:.1}40%{opacity:1}}
         @keyframes scanline{0%{transform:translateY(-100%)}100%{transform:translateY(400%)}}
+
+        /* NAV */
         .nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;border-bottom:1px solid var(--border);background:rgba(5,7,18,0.8);backdrop-filter:blur(20px) saturate(1.8);}
         .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
         .nav-name{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:#f0f2ff;letter-spacing:-0.02em}
@@ -714,33 +427,39 @@ const generate = async () => {
         .nav-btn:hover{background:var(--surface3);border-color:var(--border3);color:var(--text)}
         .nav-btn-primary{background:rgba(99,102,241,0.15);border-color:rgba(99,102,241,0.3);color:#a5b4fc}
         .nav-btn-primary:hover{background:rgba(99,102,241,0.25);border-color:rgba(99,102,241,0.5);color:#c7d2fe}
+
+        /* HERO */
         .hero{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:6rem 2rem 5rem;overflow:hidden;}
         .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(99,102,241,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,black,transparent);pointer-events:none;}
         .hero-badge{position:relative;display:inline-flex;align-items:center;gap:8px;padding:7px 18px;border-radius:100px;border:1px solid rgba(99,102,241,0.2);background:rgba(99,102,241,0.06);margin-bottom:2rem;animation:fadeUp 0.6s ease both;}
         .hero-badge::before{content:'';position:absolute;inset:0;border-radius:100px;background:linear-gradient(90deg,transparent,rgba(99,102,241,0.15),transparent);background-size:200% 100%;animation:gradShift 3s ease infinite;}
         .hero-badge-dot{width:5px;height:5px;border-radius:50%;background:#818cf8;animation:pip 2s infinite}
         .hero-badge-text{font-family:'JetBrains Mono',monospace;font-size:11px;color:#818cf8;letter-spacing:0.1em;text-transform:uppercase;position:relative;z-index:1}
-        .hero-h1{font-family:'Syne',sans-serif;font-size:clamp(2.6rem,6vw,5rem);font-weight:800;color:#f0f2ff;line-height:1.06;letter-spacing:-0.04em;margin-bottom:1.5rem;max-width:760px;animation:fadeUp 0.6s 0.1s ease both;}
+        .hero-h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,6vw,5rem);font-weight:800;color:#f0f2ff;line-height:1.06;letter-spacing:-0.04em;margin-bottom:1.5rem;max-width:760px;animation:fadeUp 0.6s 0.1s ease both;}
         .hero-h1 .grad{background:linear-gradient(135deg,#c7d2fe 0%,#818cf8 35%,#6366f1 65%,#4f46e5 100%);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradShift 4s ease infinite;}
         .hero-sub{font-size:1.05rem;font-weight:300;color:var(--text3);line-height:1.75;max-width:500px;margin-bottom:2.5rem;animation:fadeUp 0.6s 0.2s ease both;letter-spacing:0.01em}
-        .hero-cta-row{display:flex;align-items:center;gap:12px;margin-bottom:4rem;animation:fadeUp 0.6s 0.3s ease both}
+        .hero-cta-row{display:flex;align-items:center;gap:12px;margin-bottom:4rem;animation:fadeUp 0.6s 0.3s ease both;flex-wrap:wrap;justify-content:center;}
         .cta-main{padding:12px 28px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:8px;box-shadow:0 4px 24px rgba(99,102,241,0.3),inset 0 1px 0 rgba(255,255,255,0.1);letter-spacing:0.01em;}
         .cta-main:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(99,102,241,0.45),inset 0 1px 0 rgba(255,255,255,0.1)}
         .cta-main:active{transform:translateY(0)}
         .cta-sub{padding:12px 20px;border-radius:12px;background:var(--surface2);border:1px solid var(--border2);color:var(--text2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;transition:all 0.15s;}
         .cta-sub:hover{background:var(--surface3);color:var(--text);border-color:var(--border3)}
-        .hero-stats{display:flex;align-items:center;gap:2px;animation:fadeUp 0.6s 0.4s ease both}
+        .hero-stats{display:flex;align-items:center;gap:2px;animation:fadeUp 0.6s 0.4s ease both;flex-wrap:wrap;justify-content:center;}
         .hstat{display:flex;flex-direction:column;align-items:center;padding:0 2.5rem;border-right:1px solid var(--border)}
         .hstat:last-child{border-right:none}
         .hstat-val{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:700;color:#f0f2ff;letter-spacing:-0.04em;line-height:1.1}
         .hstat-val .acc{background:linear-gradient(135deg,#818cf8,#6366f1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .hstat-label{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;margin-top:2px}
+
+        /* SECTION */
         .section{position:relative;max-width:1160px;margin:0 auto;padding:5rem 2.5rem}
         .section-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;}
         .section-tag::before,.section-tag::after{content:'';height:1px;width:32px;background:linear-gradient(90deg,transparent,var(--gold))}
         .section-tag::after{background:linear-gradient(90deg,var(--gold),transparent)}
         .section-h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;color:#eef0ff;letter-spacing:-0.03em;text-align:center;margin-bottom:0.75rem}
         .section-sub{font-size:0.9rem;font-weight:300;color:var(--text3);text-align:center;line-height:1.75;max-width:480px;margin:0 auto 3.5rem}
+
+        /* WORKSPACE */
         .workspace{background:rgba(255,255,255,0.025);border:1px solid var(--border2);border-radius:24px;overflow:hidden;box-shadow:0 0 0 1px rgba(99,102,241,0.05),0 40px 120px rgba(0,0,0,0.6),0 0 80px rgba(99,102,241,0.04);position:relative;}
         .workspace::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(129,140,248,0.4),transparent);}
         .ws-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2);}
@@ -751,39 +470,35 @@ const generate = async () => {
         .ws-header-right{display:flex;align-items:center;gap:8px}
         .ws-tag{padding:3px 10px;border-radius:100px;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.15);font-family:'JetBrains Mono',monospace;font-size:10px;color:#818cf8;letter-spacing:0.06em}
         .panels{display:grid;grid-template-columns:1fr 1fr;min-height:340px}
-        @media(max-width:800px){.panels{grid-template-columns:1fr}}
         .panel{display:flex;flex-direction:column;position:relative}
         .panel+.panel{border-left:1px solid var(--border)}
-        @media(max-width:800px){.panel+.panel{border-left:none;border-top:1px solid var(--border)}}
-        .panel-bar{display:flex;align-items:center;justify-content:space-between;padding:0.875rem 1.5rem;border-bottom:1px solid var(--border)}
+        .panel-bar{display:flex;align-items:center;justify-content:space-between;padding:0.875rem 1.5rem;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:8px;}
         .panel-bar-left{display:flex;align-items:center;gap:10px}
-        .panel-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px}
+        .panel-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
         .panel-title{font-size:0.8rem;font-weight:500;color:var(--text2);letter-spacing:0.02em}
         .char-counter{display:flex;align-items:center;gap:6px}
         .char-text{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:0.04em}
         .char-text.warn{color:#f6ad55}
-        textarea{flex:1;width:100%;background:transparent;border:none;outline:none;padding:1.25rem 1.5rem;color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:300;line-height:1.8;resize:none;min-height:280px;letter-spacing:0.01em;transition:background 0.2s;}
+        textarea{flex:1;width:100%;background:transparent;border:none;outline:none;padding:1.25rem 1.5rem;color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:300;line-height:1.8;resize:none;min-height:240px;letter-spacing:0.01em;transition:background 0.2s;}
         textarea::placeholder{color:var(--text3)}
         textarea:focus{background:rgba(99,102,241,0.02)}
         .edit-textarea{border:1px solid rgba(99,102,241,0.25)!important;border-radius:0!important;background:rgba(99,102,241,0.03)!important;color:var(--text)!important;font-family:'DM Sans',sans-serif!important;font-size:0.875rem!important;font-weight:300!important;line-height:1.9!important;letter-spacing:0.015em!important;resize:none!important;outline:none!important;transition:border-color 0.2s,background 0.2s!important;}
         .edit-textarea:focus{background:rgba(99,102,241,0.05)!important;border-color:rgba(99,102,241,0.4)!important}
         .panel-focused{box-shadow:inset 0 0 30px rgba(99,102,241,0.03)}
-        .out-content{flex:1;padding:1.25rem 1.5rem;font-size:0.875rem;font-weight:300;line-height:1.9;color:var(--text);white-space:pre-wrap;min-height:280px;letter-spacing:0.015em;font-family:'DM Sans',sans-serif;overflow-y:auto}
-        .out-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:280px;padding:2rem}
+        .out-content{flex:1;padding:1.25rem 1.5rem;font-size:0.875rem;font-weight:300;line-height:1.9;color:var(--text);white-space:pre-wrap;min-height:240px;letter-spacing:0.015em;font-family:'DM Sans',sans-serif;overflow-y:auto}
+        .out-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:240px;padding:2rem}
         .empty-orb{width:56px;height:56px;border-radius:16px;border:1px solid var(--border2);background:linear-gradient(135deg,rgba(99,102,241,0.08),rgba(99,102,241,0.03));display:flex;align-items:center;justify-content:center;font-size:22px;position:relative;overflow:hidden;}
         .empty-orb::after{content:'';position:absolute;top:-100%;left:-100%;right:-100%;bottom:-100%;background:linear-gradient(135deg,transparent 40%,rgba(99,102,241,0.08),transparent 60%);animation:scanline 3s ease-in-out infinite;}
         .empty-title{font-size:0.85rem;font-weight:500;color:var(--text2);text-align:center}
         .empty-sub{font-size:0.75rem;font-weight:300;color:var(--text3);text-align:center;line-height:1.7;max-width:200px}
-        .loading-wrap{flex:1;padding:1.5rem;min-height:280px}
+        .loading-wrap{flex:1;padding:1.5rem;min-height:240px}
         .skel-bar{height:10px;border-radius:5px;margin-bottom:10px;background:linear-gradient(90deg,rgba(99,102,241,0.06) 0%,rgba(129,140,248,0.12) 50%,rgba(99,102,241,0.06) 100%);background-size:200% 100%;animation:shimmer 1.5s ease-in-out infinite;}
         .ws-controls{border-top:1px solid var(--border);padding:1.5rem;display:flex;flex-direction:column;gap:1.5rem;background:rgba(0,0,0,0.1)}
-        .tone-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:0.875rem}
+        .tone-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:0.875rem;flex-wrap:wrap;gap:6px;}
         .tone-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);display:flex;align-items:center;gap:8px}
         .tone-label::before{content:'';width:16px;height:1px;background:var(--border2)}
         .selected-tone{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--accent2);letter-spacing:0.06em}
         .tone-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
-        @media(max-width:900px){.tone-grid{grid-template-columns:repeat(4,1fr)}}
-        @media(max-width:500px){.tone-grid{grid-template-columns:repeat(2,1fr)}}
         .tone-btn{padding:0.65rem 0.6rem;border-radius:10px;border:1px solid var(--border);background:transparent;cursor:pointer;transition:all 0.15s;display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;position:relative;overflow:hidden;}
         .tone-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(99,102,241,0.1),transparent);opacity:0;transition:opacity 0.15s}
         .tone-btn:hover{border-color:var(--border2);background:var(--surface2)}
@@ -800,7 +515,7 @@ const generate = async () => {
         .gen-btn:hover::before{opacity:1}
         .gen-btn:active:not(:disabled){transform:translateY(0)}
         .gen-btn:disabled{opacity:0.35;cursor:not-allowed;box-shadow:none}
-        .icon-btn{padding:0 1.1rem;border-radius:12px;border:1px solid var(--border2);background:var(--surface2);color:var(--text2);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;min-width:80px;}
+        .icon-btn{padding:0 1.1rem;border-radius:12px;border:1px solid var(--border2);background:var(--surface2);color:var(--text2);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;min-width:60px;height:44px;}
         .icon-btn:hover{background:var(--surface3);color:var(--text);border-color:var(--border3)}
         .icon-btn.ok{color:var(--success);border-color:rgba(74,222,128,0.25);background:rgba(74,222,128,0.06)}
         .icon-btn.editing{color:#a78bfa;border-color:rgba(167,139,250,0.3);background:rgba(167,139,250,0.08)}
@@ -810,68 +525,102 @@ const generate = async () => {
         .dots span{width:3px;height:3px;border-radius:50%;background:#a5b4fc;animation:blink 1.2s infinite;display:inline-block}
         .dots span:nth-child(2){animation-delay:0.2s}
         .dots span:nth-child(3){animation-delay:0.4s}
+
+        /* FEATURES */
         .features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:20px;overflow:hidden;border:1px solid var(--border)}
-        @media(max-width:900px){.features-grid{grid-template-columns:repeat(2,1fr)}}
-        @media(max-width:500px){.features-grid{grid-template-columns:1fr}}
         .feat{background:var(--bg2);padding:2rem 1.75rem;transition:background 0.2s;position:relative;overflow:hidden}
         .feat:hover{background:rgba(255,255,255,0.025)}
         .feat-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:1.25rem;position:relative}
         .feat-title{font-size:0.875rem;font-weight:500;color:#dde3f0;margin-bottom:0.5rem;font-family:'Syne',sans-serif;letter-spacing:-0.01em}
         .feat-desc{font-size:0.78rem;font-weight:300;color:var(--text3);line-height:1.75}
         .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent);margin:0}
+
+        /* FOOTER */
         .footer{border-top:1px solid var(--border);padding:2rem 2.5rem;background:rgba(0,0,0,0.2)}
         .footer-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
         .footer-brand{display:flex;align-items:center;gap:10px}
         .footer-name{font-family:'Syne',sans-serif;font-size:0.9rem;font-weight:700;color:var(--text3);letter-spacing:-0.01em}
-        .footer-stack{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:0.04em}
+        .footer-stack{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:0.04em;flex-wrap:wrap;}
         .stack-pill{padding:3px 9px;border-radius:4px;background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-family:'JetBrains Mono',monospace;font-size:10px}
-        @media(max-width:900px){.sample-grid{grid-template-columns:repeat(2,1fr)!important}}
+
+        /* SAMPLE GRID */
+        .sample-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+
+        /* ===================== RESPONSIVE BREAKPOINTS ===================== */
+
+        /* Tablet landscape (≤1024px) */
+        @media(max-width:1024px){
+          .section{padding:4rem 2rem}
+          .tone-grid{grid-template-columns:repeat(4,1fr)}
+          .features-grid{grid-template-columns:repeat(2,1fr)}
+          .sample-grid{grid-template-columns:repeat(2,1fr)}
+        }
+
+        /* Tablet portrait (≤800px) */
+        @media(max-width:800px){
+          .panels{grid-template-columns:1fr}
+          .panel+.panel{border-left:none;border-top:1px solid var(--border)}
+          .hero{padding:4rem 1.5rem 3.5rem}
+          .hero-h1{font-size:clamp(1.8rem,7vw,3rem)}
+          .hero-sub{font-size:0.95rem}
+          .hstat{padding:0 1.5rem}
+          .hstat-val{font-size:1.4rem}
+          .nav{padding:0.875rem 1.5rem}
+          .ws-header-title{display:none}
+          .section{padding:3.5rem 1.5rem}
+        }
+
+        /* Mobile large (≤600px) */
+        @media(max-width:600px){
+          .sample-grid{grid-template-columns:repeat(2,1fr)}
+          .tone-grid{grid-template-columns:repeat(2,1fr)}
+          .features-grid{grid-template-columns:1fr}
+          .hero-stats{gap:0}
+          .hstat{padding:0 1rem;border-right:1px solid var(--border)}
+          .hstat:nth-child(2){border-right:none}
+          .hstat:nth-child(3){border-right:1px solid var(--border)}
+          .hstat:nth-child(4){border-right:none}
+          .hero-stats{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:320px}
+          .hstat{border-right:none!important;border-bottom:1px solid var(--border);padding:1rem}
+          .hstat:nth-child(3),.hstat:nth-child(4){border-bottom:none}
+          .panel-bar{padding:0.75rem 1rem}
+          .ws-controls{padding:1.25rem 1rem}
+          .workspace{border-radius:16px}
+          .icon-btn{padding:0 0.7rem;font-size:9px;min-width:50px}
+          .footer{padding:1.5rem 1rem}
+          .section{padding:3rem 1rem}
+          textarea{padding:1rem;min-height:200px}
+          .out-content{padding:1rem;min-height:200px}
+          .loading-wrap{padding:1rem;min-height:200px}
+        }
+
+        /* Mobile small (≤400px) */
+        @media(max-width:400px){
+          .sample-grid{grid-template-columns:1fr}
+          .nav-btn span{display:none}
+          .hero-badge-text{font-size:9px;letter-spacing:0.06em}
+          .hero{padding:3rem 1rem 2.5rem}
+          .hero-cta-row{flex-direction:column;width:100%}
+          .cta-main,.cta-sub{width:100%;justify-content:center}
+          .tone-grid{grid-template-columns:repeat(2,1fr)}
+          .action-row{flex-direction:column}
+          .gen-btn{width:100%}
+          .hstat-val{font-size:1.2rem}
+        }
       `}</style>
 
       <div className="root">
-        <GlowOrb
-          style={{
-            width: 700,
-            height: 500,
-            top: -150,
-            right: -100,
-            background:
-              "radial-gradient(ellipse,rgba(99,102,241,1),transparent)",
-          }}
-        />
-        <GlowOrb
-          style={{
-            width: 500,
-            height: 400,
-            bottom: -100,
-            left: -100,
-            background:
-              "radial-gradient(ellipse,rgba(99,70,150,1),transparent)",
-          }}
-        />
-        <GlowOrb
-          style={{
-            width: 350,
-            height: 250,
-            top: "45%",
-            left: "40%",
-            background:
-              "radial-gradient(ellipse,rgba(99,102,241,1),transparent)",
-          }}
-        />
+        <GlowOrb style={{ width: 700, height: 500, top: -150, right: -100, background: "radial-gradient(ellipse,rgba(99,102,241,1),transparent)" }} />
+        <GlowOrb style={{ width: 500, height: 400, bottom: -100, left: -100, background: "radial-gradient(ellipse,rgba(99,70,150,1),transparent)" }} />
+        <GlowOrb style={{ width: 350, height: 250, top: "45%", left: "40%", background: "radial-gradient(ellipse,rgba(99,102,241,1),transparent)" }} />
 
         <nav className="nav">
           <div className="nav-brand">
             <LogoMark />
-            <span className="nav-name">
-              Mail<span>Craft</span>
-            </span>
+            <span className="nav-name">Mail<span>Craft</span></span>
           </div>
           <div className="nav-right">
-            <button
-              className="nav-btn nav-btn-primary"
-              onClick={scrollToWorkspace}
-            >
+            <button className="nav-btn nav-btn-primary" onClick={scrollToWorkspace}>
               Try Now →
             </button>
           </div>
@@ -881,26 +630,18 @@ const generate = async () => {
           <div className="hero-grid-bg" />
           <div className="hero-badge">
             <div className="hero-badge-dot" />
-            <span className="hero-badge-text">
-              AI-Powered Email Intelligence
-            </span>
+            <span className="hero-badge-text">AI-Powered Email Intelligence</span>
           </div>
           <h1 className="hero-h1">
-            Write Perfect Emails
-            <br />
+            Write Perfect Emails<br />
             <span className="grad">10× Faster with AI</span>
           </h1>
           <p className="hero-sub">
-            Paste any email, select your communication style, and receive a
-            polished, context-aware reply in under 3 seconds.
+            Paste any email, select your communication style, and receive a polished, context-aware reply in under 3 seconds.
           </p>
           <div className="hero-cta-row">
-            <button className="cta-main" onClick={scrollToWorkspace}>
-              <SendIcon /> Start Generating
-            </button>
-            <button className="cta-sub" onClick={scrollToWorkspace}>
-              See Demo ↓
-            </button>
+            <button className="cta-main" onClick={scrollToWorkspace}><SendIcon /> Start Generating</button>
+            <button className="cta-sub" onClick={scrollToWorkspace}>See Demo ↓</button>
           </div>
           <div className="hero-stats">
             {[
@@ -910,9 +651,7 @@ const generate = async () => {
               { val: "99.9%", label: "Uptime" },
             ].map((s, i) => (
               <div key={i} className="hstat">
-                <div className="hstat-val">
-                  <span className="acc">{s.val}</span>
-                </div>
+                <div className="hstat-val"><span className="acc">{s.val}</span></div>
                 <div className="hstat-label">{s.label}</div>
               </div>
             ))}
@@ -921,9 +660,7 @@ const generate = async () => {
 
         <section className="section" ref={workspaceRef}>
           <div className="section-tag">AI Workspace</div>
-          <h2 className="section-h2" style={{ marginBottom: "2rem" }}>
-            Compose Your Reply
-          </h2>
+          <h2 className="section-h2" style={{ marginBottom: "2rem" }}>Compose Your Reply</h2>
 
           <SampleMailsSection onSelect={setEmail} workspaceRef={workspaceRef} />
 
@@ -946,23 +683,8 @@ const generate = async () => {
               <div className={`panel ${focused ? "panel-focused" : ""}`}>
                 <div className="panel-bar">
                   <div className="panel-bar-left">
-                    <div
-                      className="panel-icon"
-                      style={{
-                        background: "rgba(99,102,241,0.1)",
-                        border: "1px solid rgba(99,102,241,0.15)",
-                      }}
-                    >
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#818cf8"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
+                    <div className="panel-icon" style={{ background: "rgba(99,102,241,0.1)", border: "1px solid rgba(99,102,241,0.15)" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="2" y="4" width="20" height="16" rx="2" />
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                       </svg>
@@ -971,35 +693,10 @@ const generate = async () => {
                   </div>
                   <div className="char-counter">
                     <svg width="22" height="22" viewBox="0 0 22 22">
-                      <circle
-                        cx="11"
-                        cy="11"
-                        r={circleR}
-                        fill="none"
-                        stroke="rgba(255,255,255,0.06)"
-                        strokeWidth="2"
-                      />
-                      <circle
-                        cx="11"
-                        cy="11"
-                        r={circleR}
-                        fill="none"
-                        stroke={pct > 90 ? "#f59e0b" : "#6366f1"}
-                        strokeWidth="2"
-                        strokeDasharray={circleDash}
-                        strokeDashoffset={circleOffset}
-                        strokeLinecap="round"
-                        transform="rotate(-90 11 11)"
-                        style={{
-                          transition: "stroke-dashoffset 0.2s, stroke 0.2s",
-                        }}
-                      />
+                      <circle cx="11" cy="11" r={circleR} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="2" />
+                      <circle cx="11" cy="11" r={circleR} fill="none" stroke={pct > 90 ? "#f59e0b" : "#6366f1"} strokeWidth="2" strokeDasharray={circleDash} strokeDashoffset={circleOffset} strokeLinecap="round" transform="rotate(-90 11 11)" style={{ transition: "stroke-dashoffset 0.2s, stroke 0.2s" }} />
                     </svg>
-                    <span
-                      className={`char-text${charCount > MAX * 0.9 ? " warn" : ""}`}
-                    >
-                      {charCount}/{MAX}
-                    </span>
+                    <span className={`char-text${charCount > MAX * 0.9 ? " warn" : ""}`}>{charCount}/{MAX}</span>
                   </div>
                 </div>
                 <textarea
@@ -1008,83 +705,34 @@ const generate = async () => {
                   onChange={(e) => setEmail(e.target.value.slice(0, MAX))}
                   onFocus={() => setFocused(true)}
                   onBlur={() => setFocused(false)}
-                  placeholder={
-                    "Paste the email you received here…\n\nHi,\nI hope this finds you well. I wanted to follow up on our discussion from last week regarding..."
-                  }
+                  placeholder={"Paste the email you received here…\n\nHi,\nI hope this finds you well. I wanted to follow up on our discussion from last week regarding..."}
                 />
               </div>
 
               <div className="panel">
                 <div className="panel-bar">
                   <div className="panel-bar-left">
-                    <div
-                      className="panel-icon"
-                      style={{
-                        background: "rgba(52,211,153,0.08)",
-                        border: "1px solid rgba(52,211,153,0.12)",
-                      }}
-                    >
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#34d399"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
+                    <div className="panel-icon" style={{ background: "rgba(52,211,153,0.08)", border: "1px solid rgba(52,211,153,0.12)" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />
                       </svg>
                     </div>
                     <span className="panel-title">
                       {loading ? (
-                        <span
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 8,
-                          }}
-                        >
-                          <span className="dots">
-                            <span />
-                            <span />
-                            <span />
-                          </span>
+                        <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                          <span className="dots"><span /><span /><span /></span>
                           Generating
                         </span>
-                      ) : reply ? (
-                        editing ? (
-                          "Editing Reply"
-                        ) : (
-                          "Generated Reply"
-                        )
-                      ) : (
-                        "AI Output"
-                      )}
+                      ) : reply ? (editing ? "Editing Reply" : "Generated Reply") : "AI Output"}
                     </span>
                   </div>
                   {reply && !loading && (
-                    <div style={{ display: "flex", gap: 6 }}>
-                      <button
-                        className={`icon-btn${editing ? " editing" : ""}`}
-                        onClick={() => setEditing(!editing)}
-                      >
+                    <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                      <button className={`icon-btn${editing ? " editing" : ""}`} onClick={() => setEditing(!editing)}>
                         {editing ? "✓ Done" : "✎ Edit"}
                       </button>
-                      <button
-                        className={`icon-btn${copied ? " ok" : ""}`}
-                        onClick={copy}
-                      >
-                        {copied ? (
-                          <>
-                            <CheckIcon /> Copied
-                          </>
-                        ) : (
-                          <>
-                            <CopyIcon /> Copy
-                          </>
-                        )}
+                      <button className={`icon-btn${copied ? " ok" : ""}`} onClick={copy}>
+                        {copied ? <><CheckIcon /> Copied</> : <><CopyIcon /> Copy</>}
                       </button>
                       <button className="icon-btn" onClick={generate}>
                         <RefreshIcon /> Retry
@@ -1097,77 +745,31 @@ const generate = async () => {
                   <div className="loading-wrap">
                     <div style={{ marginBottom: 20 }}>
                       {[100, 85, 90, 70, 95, 60, 80, 45].map((w, i) => (
-                        <div
-                          key={i}
-                          className="skel-bar"
-                          style={{
-                            width: `${w}%`,
-                            animationDelay: `${i * 0.1}s`,
-                          }}
-                        />
+                        <div key={i} className="skel-bar" style={{ width: `${w}%`, animationDelay: `${i * 0.1}s` }} />
                       ))}
                     </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 10,
-                        padding: "1rem",
-                        borderRadius: 10,
-                        background: "rgba(99,102,241,0.05)",
-                        border: "1px solid rgba(99,102,241,0.1)",
-                      }}
-                    >
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "1rem", borderRadius: 10, background: "rgba(99,102,241,0.05)", border: "1px solid rgba(99,102,241,0.1)" }}>
                       <SpinnerIcon />
-                      <span
-                        style={{
-                          fontFamily: "'JetBrains Mono',monospace",
-                          fontSize: 11,
-                          color: "#818cf8",
-                          letterSpacing: "0.06em",
-                        }}
-                      >
+                      <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: "#818cf8", letterSpacing: "0.06em" }}>
                         Crafting your {tone} reply…
                       </span>
                     </div>
                   </div>
                 ) : reply ? (
                   editing ? (
-                    <textarea
-                      className="edit-textarea"
-                      value={editedReply}
-                      onChange={(e) => setEditedReply(e.target.value)}
-                      style={{
-                        flex: 1,
-                        minHeight: 280,
-                        padding: "1.25rem 1.5rem",
-                      }}
-                    />
+                    <textarea className="edit-textarea" value={editedReply} onChange={(e) => setEditedReply(e.target.value)} style={{ flex: 1, minHeight: 240, padding: "1.25rem 1.5rem" }} />
                   ) : (
                     <div className="out-content">{editedReply}</div>
                   )
                 ) : (
                   <div className="out-empty">
                     <div className="empty-orb">
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="rgba(129,140,248,0.5)"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(129,140,248,0.5)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />
                       </svg>
                     </div>
-                    <div className="empty-title">
-                      Your reply will appear here
-                    </div>
-                    <div className="empty-sub">
-                      Paste an email, choose a tone, and hit Generate
-                    </div>
+                    <div className="empty-title">Your reply will appear here</div>
+                    <div className="empty-sub">Paste an email, choose a tone, and hit Generate</div>
                   </div>
                 )}
               </div>
@@ -1175,25 +777,16 @@ const generate = async () => {
 
             <div className="ws-controls">
               {error && (
-                <div className="err-box">
-                  <span>⚠</span> {error}
-                </div>
+                <div className="err-box"><span>⚠</span> {error}</div>
               )}
               <div>
                 <div className="tone-header">
                   <div className="tone-label">Reply Tone</div>
-                  <span className="selected-tone">
-                    {TONES.find((t) => t.value === tone)?.label}
-                  </span>
+                  <span className="selected-tone">{TONES.find((t) => t.value === tone)?.label}</span>
                 </div>
                 <div className="tone-grid">
                   {TONES.map((t) => (
-                    <button
-                      key={t.value}
-                      className={`tone-btn${tone === t.value ? " active" : ""}`}
-                      onClick={() => setTone(t.value)}
-                      title={t.desc}
-                    >
+                    <button key={t.value} className={`tone-btn${tone === t.value ? " active" : ""}`} onClick={() => setTone(t.value)} title={t.desc}>
                       <span className="tone-name">{t.label}</span>
                       <span className="tone-desc">{t.desc}</span>
                     </button>
@@ -1201,20 +794,8 @@ const generate = async () => {
                 </div>
               </div>
               <div className="action-row">
-                <button
-                  className="gen-btn"
-                  onClick={generate}
-                  disabled={loading || !email.trim()}
-                >
-                  {loading ? (
-                    <>
-                      <SpinnerIcon /> Generating reply…
-                    </>
-                  ) : (
-                    <>
-                      <SendIcon /> Generate AI Reply
-                    </>
-                  )}
+                <button className="gen-btn" onClick={generate} disabled={loading || !email.trim()}>
+                  {loading ? <><SpinnerIcon /> Generating reply…</> : <><SendIcon /> Generate AI Reply</>}
                 </button>
               </div>
             </div>
@@ -1226,74 +807,15 @@ const generate = async () => {
         <section className="section">
           <div className="section-tag">Why MailCraft</div>
           <h2 className="section-h2">Built for professionals</h2>
-          <p className="section-sub">
-            Every feature engineered to make email communication faster,
-            sharper, and more effective.
-          </p>
+          <p className="section-sub">Every feature engineered to make email communication faster, sharper, and more effective.</p>
           <div className="features-grid">
             {FEATURES.map((f, i) => (
               <div key={f.title} className="feat">
-                <div
-                  className="feat-icon"
-                  style={{ background: f.bg, border: `1px solid ${f.border}` }}
-                >
-                  {i === 0 && (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke={f.color}
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                    </svg>
-                  )}
-                  {i === 1 && (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke={f.color}
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />
-                    </svg>
-                  )}
-                  {i === 2 && (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke={f.color}
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  )}
-                  {i === 3 && (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke={f.color}
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                      <polyline points="17 6 23 6 23 12" />
-                    </svg>
-                  )}
+                <div className="feat-icon" style={{ background: f.bg, border: `1px solid ${f.border}` }}>
+                  {i === 0 && <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={f.color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>}
+                  {i === 1 && <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={f.color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /></svg>}
+                  {i === 2 && <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={f.color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>}
+                  {i === 3 && <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={f.color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></svg>}
                 </div>
                 <div className="feat-title">{f.title}</div>
                 <div className="feat-desc">{f.desc}</div>
@@ -1311,20 +833,9 @@ const generate = async () => {
               <span className="footer-name">MailCraft</span>
             </div>
             <div className="footer-stack">
-              <span
-                style={{
-                  color: "var(--text3)",
-                  letterSpacing: "0.06em",
-                  fontSize: 10,
-                  fontFamily: "'JetBrains Mono',monospace",
-                }}
-              >
-                STACK
-              </span>
+              <span style={{ color: "var(--text3)", letterSpacing: "0.06em", fontSize: 10, fontFamily: "'JetBrains Mono',monospace" }}>STACK</span>
               {["AI", "Spring Boot", "React"].map((s) => (
-                <span key={s} className="stack-pill">
-                  {s}
-                </span>
+                <span key={s} className="stack-pill">{s}</span>
               ))}
             </div>
           </div>
